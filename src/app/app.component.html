@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Weather</a>
+    <form class="d-flex" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Enter City Name"
+        name="cityname"
+        aria-label="Search"
+        [(ngModel)]="cityname"
+      />
+      <button class="btn btn-success" (click)="checkweather()" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</nav>
+<div></div>
+<body>
+  <div class="inputdesign">
+    <input class="inputform my-4" #value placeholder="Enter City Name and Press Enter Key" type="search" (keyup.enter)="weather(value.value)" />
+  </div>
+
+  <div class="main">
+    <div class="secondmain">
+      <h6 class="text-center mb-3">{{ place }} {{ time }}</h6>
+      <div class="daytimeinfo">
+        <h6>{{ maintimedate }}</h6>
+      </div>
+      <div class="image">
+        <img src="{{ imagesrc }}" alt="" />
+      </div>
+      <div class="temperature text-center mb-2">
+        {{ temperature }}
+      </div>
+      <div class="sunrisesunset">
+        <p>{{ sunrise }}</p>
+        <p>{{ sunset }}</p>
+      </div>
+      <div class="climateinfo">
+        <p>{{ climate }}</p>
+        <p>{{ climatedescription }}</p>
+      </div>
+      <div class="humidvisible">
+        <p>{{ humidity }}</p>
+        <p>{{ visiblity }}</p>
+        <p>{{ windspeed }}</p>
+      </div>
+    </div>
+  </div>
+</body>

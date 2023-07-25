@@ -1,0 +1,84 @@
+
+body{
+    background-color: skyblue;
+    height: 100%;
+    width: 100%;
+}
+#image{
+    opacity: 20%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;  
+    /* background-color: rgba(0, 0, 0, 0.271); */
+    color: white;
+    height: 92vh;
+    width: 99vw;
+    padding: 2%;
+}
+.secondmain{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.271);
+    color: white;
+    height: 80%;
+    width: 80%;
+    padding: 1%;
+    margin-bottom: 2px;
+    display: none;
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temperature{
+    font-size: 2rem;
+}
+.daytimeinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thirdmain{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.271);
+    color: white;
+    height: 23%;
+    width: 80%;
+    display: none;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.271);
+    color: white;
+    height: 100%;
+    width: 25%;
+    font-size: small;
+}
+.style{
+    display: flex;
+}
+
+.inputdesign{
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+
+.inputform{
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 400px;
+    align-items: center;
+    border: 2px solid orange;
+    outline: none;
+}
